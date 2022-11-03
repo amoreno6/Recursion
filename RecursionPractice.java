@@ -109,6 +109,16 @@ public int numberOfGlovesNoRecursion(int peopleOfPlanetU101InARoom)
 //getNumberOfZero WITH LOOP
 public int getNumberOfZerosLoop(int n)
 {
+  int counter = 0;
+  while(n/10 > 0)
+  {
+    if(n%10 == 0)
+    {
+      counter++;
+    }
+    n = n/10;
+  }
+  return counter;
 }
 
 
